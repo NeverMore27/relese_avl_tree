@@ -9,13 +9,6 @@ URL "https://github.com/NeverMore27/hunter/archive/v0.19.137.12.tar.gz"
 )
 
 project(demo)
-
-hunter_add_package(avl_tree)
-find_package(avl_tree)
-add_executable(demo ${CMAKE_CURRENT_SOURCE_DIR}/sources/demo.cpp)
-target_link_libraries(demo avl_tree)
-install(TARGETS demo RUNTIME DESTINATION bin)
-
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
