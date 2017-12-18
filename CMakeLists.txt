@@ -21,7 +21,7 @@ target_sources(${PROJECT_NAME} INTERFACE "${PROJECT_SOURCE_DIR}/include/test.hpp
 target_include_directories(${PROJECT_NAME} INTERFACE "${PROJECT_SOURCE_DIR}/include")
 
 if(BUILD_TESTS)
-  hunter_add_package(Catch)
+
   hunter_add_package(avl_tree)
   find_package(Catch CONFIG REQUIRED)
   
